@@ -46,12 +46,14 @@ kv = """
 
 Builder.load_string(kv)
 
+
 class OtherClass(BoxLayout):
-    other_class_property = 'Other Class Property - From Python Code'
+    other_class_property = "Other Class Property - From Python Code"
 
 
 class Main(App):
-    main_app_class = 'Main App Class Property - From Python Code'
+    main_app_class = "Main App Class Property - From Python Code"
+
     def build(self):
         # Have to specify self.root otherwise it doesn't exist
         self.root = "Main App Class Root"
